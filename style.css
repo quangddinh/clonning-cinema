@@ -13,8 +13,9 @@ footer{
     bottom:0px;
     background: #0a1e5e;
     /* background-color: #fff; */
-    letter-spacing: 0.2em;
-    font-size: 0.8em;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    font-weight:400;
     display: flexbox;
     padding-bottom: 10px;
 }
