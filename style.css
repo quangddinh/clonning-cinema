@@ -6,111 +6,189 @@
     
 }
 header {
-    padding-top: 10px;
-    background-color: #001232;
+    top: 0;
     position: fixed;
     width: 100%;
-    top:0;
-    font-size: 1.2rem;
-    font-weight:bold;
-    display: flex;
+    height: 90px;
+    background-color: #001232;
+}
 
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav-list{
+    /* bỏ chấm */
+    margin-left: 20px;
+    position: relative;
+}
+
+.logo{
+    padding:0;
+    margin-top: 10px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.header__nav-item{
+    margin: 0 10px;
+}
+.header__nav-item,
+.header__nav-item-link{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    /* bỏ gạch chân */
+    font-weight: 600;
+    color: #fff;
+}
+.header__nav-item:hover,
+.header__nav-item-link:hover{
+    color: #bcdbff;
+}
+
+.sub-nav--content{
+    font-size: 1.35rem;
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: rgb(165, 153, 153);
+    font-weight: 300;
+    border-radius: 15px;
+    padding: 0 5px;
+    transition: 1ms;
+}
+a {
+    text-decoration: none;
+}
+.header__nav-item:hover .sub-nav--content{
+    display: block;
 }
 
 .col20{
     width:20%;
+    justify-self: center;
 }
 .col80{
     width: 80%;
-    justify-content: center;
 }
 
-.btnjoin {
+.col50{
+    width: 50%;
+}
+
+.col90{
+    width: 90%;
+}
+
+.content__about{
+    display: flex;
+    margin: 10px 0;
+    margin-left: 10%;
+}
+
+p {
+    margin: 40px 0;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 250;
+    color: #31d7a9;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h4{
+    font-size: 1.8rem;
+}
+.content__text {
+    margin-top: 100px;
+    font-size: 1.5rem;
+}
+
+.content__text2{
+    background-color: #5560ff;
+    margin-left: 600px;
+}
+
+.content__text > ul > li {
+    margin: 50px 0;
+}
+
+
+.header__nav-item--btnjoin {
+    margin-left: 80px;
     padding: 15px 35px;
     font-size: 1.2rem;
     text-align: center;
+    color: #FFF;
+    font-weight: 500;
     text-transform: uppercase;
     transition: 0.5s;
     background: linear-gradient(to right, #f24551 0%, #348AC7 51%, #5560ff 100%);
     border-radius: 30px;
-
 }
 
-header ul {
-    justify-content: center;
-}
-
-.logo{
-    text-align: center;
-}
-span{
-    color: #fff;
-}
-footer{
+.footer__content{
     width: 100%;
     bottom:0;
     position: static;
-    background: #0a1e5e;
+    background: rgb(165, 153, 153);;
     /* background-color: #fff; */
     letter-spacing: 0.1rem;
-    font-size: 1rem;
-    font-weight:400;
+    font-size: 1.5rem;
     display: flexbox;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
-
-.box {
+.footer__content-box{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:10px;
+    margin: 20px;
 }
-p {
-    text-align: center;
-    top: 50%; 
-}
-
-.container .box {
-    flex-basis: 50%;
-    padding: 10px 20px;
-}
-p, li {
-    color: #fff;
-    list-style-type: none;
-}
-ul {
+.footer__list{
+    align-items: center;
+    justify-content: center;
+    list-style: none;
     display: flex;
-    padding: auto;
 }
-li{
-    align-items: center;
-    margin:10px;
-    padding:0;
-}
-div > p > a {
-    color: #1cc8a5
-}
-ul > li > a , p > a{
+.footer__item{
+    font-size: 1.5rem;
     text-decoration: none;
-    color: white;
-    align-items: center;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 20px;
+}
+.footer__link{
+    text-decoration: none;
+    margin: 0 20px;
+}
+.fab{
+    font-size: 2rem;
+    padding-right: 15px;
+}
+hr {
+    margin: 0 40px;
 }
 
-.container .box .ul-social >li{
+.ul-social > li {
     height:50px;
-    width:50px;
-    background-color: #563d7c;
-    text-align: center;
-    line-height:50px;
-    font-size: 1.5rem;
-    border-radius:20px ;
+    width:60px;
+    background-color: #e49ade;
+    line-height:60px;
+    border-radius:20px;
     transition:0.3s;
+    margin: 10px;
 }
-.container .box .ul-social >li:hover{
-    background-color:#1cc8a5;
+.ul-social > li:hover {
+    background-color:#b94b67;
     color: #111
 }
-.title{
-    margin-top:40px;
-    top: 20%;
+.ul-social > li > a {
+    margin-left: 1rem;
 }
